@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guardian Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <div class="brand">Guardian Academy</div>
+        <a class="btn btn-outline" href="#apply">Apply Now</a>
+      </nav>
+      <div class="hero-content container">
+        <p class="eyebrow">Excellence • Character • Leadership</p>
+        <h1>Shaping confident learners for a changing world.</h1>
+        <p>
+          Guardian Academy is a future-ready K-12 school focused on academic rigor,
+          digital literacy, arts, and athletics in a safe, inclusive environment.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#programs">Explore Programs</a>
+          <a class="btn btn-outline" href="#contact">Book a Campus Tour</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="programs" class="section container">
+        <h2>Our Signature Programs</h2>
+        <div class="grid cards">
+          <article class="card">
+            <h3>STEM Innovation Lab</h3>
+            <p>
+              Hands-on robotics, coding, and science projects that encourage curiosity
+              and real-world problem solving.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Global Language Track</h3>
+            <p>
+              Multilingual learning with immersive culture clubs and exchange-ready
+              communication skills.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Creative Arts Studio</h3>
+            <p>
+              Music, visual arts, and performing arts pathways that build confidence,
+              discipline, and expression.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container grid two-col">
+          <div>
+            <h2>Why Families Choose Guardian Academy</h2>
+            <ul class="feature-list">
+              <li>Small class sizes and personalized mentorship.</li>
+              <li>Character education integrated into every grade.</li>
+              <li>Modern campus with secure facilities.</li>
+              <li>Strong university and career readiness outcomes.</li>
+            </ul>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <span>98%</span>
+              <p>Graduation rate</p>
+            </div>
+            <div class="stat">
+              <span>24</span>
+              <p>Average class size</p>
+            </div>
+            <div class="stat">
+              <span>40+</span>
+              <p>Clubs and sports teams</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="apply" class="section container">
+        <h2>Admissions in 3 Steps</h2>
+        <div class="timeline">
+          <div class="timeline-step"><strong>1.</strong> Submit your online inquiry.</div>
+          <div class="timeline-step"><strong>2.</strong> Attend a campus visit and student assessment.</div>
+          <div class="timeline-step"><strong>3.</strong> Receive placement and enrollment guidance.</div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="container contact-box">
+          <div>
+            <h2>Ready to join Guardian Academy?</h2>
+            <p>
+              Speak with our admissions team for fee details, scholarship options,
+              and next intake dates.
+            </p>
+          </div>
+          <form class="contact-form" aria-label="Guardian Academy inquiry form">
+            <label>
+              Full Name
+              <input type="text" name="name" placeholder="e.g. Amina Yusuf" required />
+            </label>
+            <label>
+              Email Address
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              Student Grade
+              <select name="grade" required>
+                <option value="">Select grade</option>
+                <option>Primary</option>
+                <option>Junior Secondary</option>
+                <option>Senior Secondary</option>
+              </select>
+            </label>
+            <button class="btn" type="submit">Send Inquiry</button>
+            <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Guardian Academy. Building leaders with purpose.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
